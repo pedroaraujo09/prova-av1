@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Manual de Manutenção Básica de Bicicleta</title>
+  <meta name="description" content="Fale com a equipe do manual ou envie dúvidas sobre sua bicicleta.">
+</head>
+<body>
+  <header>
+    <h1>Manual de Manutenção Básica de Bicicleta</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="tipos.html">Tipos de bike</a></li>
+        <li><a href="manutencao.html">Manutenção</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="contato-titulo">
+      <h2 id="contato-titulo">Envie sua dúvida</h2>
+      <p>
+        Tem um problema na bicicleta que não foi coberto neste manual? Preencha o
+        formulário abaixo e entraremos em contato.
+      </p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </p>
+
+        <p>
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+        </p>
+
+        <p>
+          <label for="assunto">Assunto:</label><br>
+          <input type="text" id="assunto" name="assunto" list="lista-assuntos" placeholder="Ex.: freio fazendo barulho" required>
+          <datalist id="lista-assuntos">
+            <option value="Freio fazendo barulho">
+            <option value="Corrente pulando marcha">
+            <option value="Pneu furando com frequência">
+            <option value="Dúvida sobre calibragem">
+          </datalist>
+        </p>
+
+        <p>
+          <label for="data-contato">Melhor data para retorno:</label><br>
+          <input type="date" id="data-contato" name="data-contato">
+        </p>
+
+        <p>
+          <label for="mensagem">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" placeholder="Descreva o problema com o máximo de detalhes possível" rows="5" cols="40" required></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Enviar mensagem</button>
+        </p>
+      </form>
+    </section>
+
+    <aside aria-labelledby="outros-canais">
+      <h2 id="outros-canais">Outros canais</h2>
+      <p>E-mail: contato@manualdebicicleta.exemplo</p>
+      <p>Respondemos normalmente em até dois dias úteis.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Manual de Manutenção Básica de Bicicleta — projeto sem fins comerciais.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="tipos.html">Tipos de bike</a></li>
+        <li><a href="manutencao.html">Manutenção</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

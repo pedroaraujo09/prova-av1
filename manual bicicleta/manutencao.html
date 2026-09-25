@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manutenção — Manual de Manutenção Básica de Bicicleta</title>
+  <meta name="description" content="Passo a passo de manutenção e formulário para agendar revisão da bicicleta.">
+</head>
+<body>
+  <header>
+    <h1>Manual de Manutenção Básica de Bicicleta</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="tipos.html">Tipos de bike</a></li>
+        <li><a href="manutencao.html" aria-current="page">Manutenção</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="faq-titulo">
+      <h2 id="faq-titulo">Perguntas frequentes</h2>
+
+      <details>
+        <summary>Com que frequência devo lubrificar a corrente?</summary>
+        <p>
+          Em uso diário, a cada 200 km ou uma vez por mês, o que vier primeiro.
+          Se a corrente estiver fazendo barulho ou enferrujada, lubrifique antes disso.
+        </p>
+      </details>
+
+      <details>
+        <summary>Os freios estão fazendo barulho, o que pode ser?</summary>
+        <p>
+          Geralmente é a pastilha ou sapata de freio desalinhada, tocando na roda
+          de forma irregular. Também pode ser sujeira acumulada no aro — limpe com
+          um pano úmido e reavalie.
+        </p>
+      </details>
+
+      <details>
+        <summary>Posso trocar o pneu sozinho, sem ferramentas especiais?</summary>
+        <p>
+          Sim, com um kit básico de manutenção (chaves de câmbio para pneu, bomba
+          de ar e, se possível, uma câmara de ar reserva) dá para trocar um pneu
+          furado em poucos minutos, mesmo na rua.
+        </p>
+      </details>
+    </section>
+
+    <section aria-labelledby="checklist-titulo">
+      <h2 id="checklist-titulo">Checklist de revisão</h2>
+      <figure>
+        <img src="../img/ferramentas.png" alt="Kit completo de manutenção para bicicleta da marca Delka, com bomba de ar manual, chaves fixas, chaves allen e bolsa organizadora">
+        <figcaption>Kit básico: bomba de ar, chaves fixas e chaves allen já resolvem a maioria dos casos.</figcaption>
+      </figure>
+
+      <p>Progresso da revisão completa da bicicleta:</p>
+      <progress value="4" max="6">4 de 6 itens verificados</progress>
+
+      <p>Pressão atual do pneu traseiro (em relação ao recomendado pelo fabricante):</p>
+      <meter value="55" min="0" max="120" low="30" high="100" optimum="65">55 PSI</meter>
+      <p><mark>Pneu murcho demais aumenta o risco de furo; calibrado demais deixa o passeio desconfortável.</mark></p>
+    </section>
+
+    <section aria-labelledby="form-titulo">
+      <h2 id="form-titulo">Agendar revisão da bicicleta</h2>
+      <p>Preencha os dados abaixo para organizar a próxima revisão da sua bike.</p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="apelido-bike">Apelido da bicicleta:</label><br>
+          <input type="text" id="apelido-bike" name="apelido-bike" placeholder="Ex.: Speed vermelha" required>
+        </p>
+
+        <p>
+          <label for="data-revisao">Data desejada para a revisão:</label><br>
+          <input type="date" id="data-revisao" name="data-revisao" required>
+        </p>
+
+        <p>
+          <label for="pressao-desejada">Pressão desejada do pneu (PSI): </label><br>
+          <input type="range" id="pressao-desejada" name="pressao-desejada" min="20" max="120" step="5" value="60">
+        </p>
+
+        <p>
+          <label for="tipo-bike">Tipo de bicicleta:</label><br>
+          <input type="text" id="tipo-bike" name="tipo-bike" list="lista-tipos" placeholder="Comece a digitar..." required>
+          <datalist id="lista-tipos">
+            <option value="Urbana">
+            <option value="Mountain bike">
+            <option value="Speed">
+            <option value="Elétrica">
+          </datalist>
+        </p>
+
+        <p>
+          <label for="foto-bike">Foto atual da bicicleta (opcional):</label><br>
+          <input type="file" id="foto-bike" name="foto-bike" accept="image/*">
+        </p>
+
+        <p>
+          <label for="observacoes">Observações:</label><br>
+          <textarea id="observacoes" name="observacoes" placeholder="Ex.: freio traseiro fazendo barulho" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Salvar agendamento</button>
+        </p>
+      </form>
+    </section>
+
+    <aside aria-labelledby="alerta-titulo">
+      <h2 id="alerta-titulo">Sinal de alerta</h2>
+      <p>Se o freio afundar quase até o guidão antes de travar, os cabos ou pastilhas provavelmente precisam de ajuste urgente.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Manual de Manutenção Básica de Bicicleta — projeto sem fins comerciais.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="tipos.html">Tipos de bike</a></li>
+        <li><a href="manutencao.html">Manutenção</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
